@@ -7,13 +7,7 @@
       name="description"
       content="프로젝트 중심 개발자 포트폴리오. 문제를 제품으로 풀고, 실행 가능한 결과를 만드는 개발자의 작업을 소개합니다."
     />
-    <title>Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Hyemin.dev | Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -23,51 +17,43 @@
         <span>Hyemin.dev</span>
       </a>
       <nav class="nav" aria-label="주요 메뉴">
-        <a href="#projects">Projects</a>
-        <a href="#stack">Stack</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#stack">기술</a>
         <a href="#github">GitHub</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">연락</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Project-driven Developer Portfolio</p>
-          <h1>문제를 제품으로 바꾸는 개발자, Hyemin입니다.</h1>
+          <p class="eyebrow">Project-driven developer</p>
+          <h1>복잡한 문제를<br />단순한 제품 경험으로 만듭니다.</h1>
           <p class="hero-text">
-            사용자 흐름을 이해하고, 작게 검증하며, 안정적으로 배포하는 과정을 좋아합니다.
-            아래 프로젝트들은 문제 정의부터 구현, 개선까지의 흐름이 보이도록 정리했습니다.
+            사용자 흐름을 먼저 이해하고, 작게 검증한 뒤 안정적으로 배포합니다.
+            프로젝트마다 문제 정의, 구현 방식, 결과를 분명하게 보여줍니다.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">대표 프로젝트 보기</a>
+            <a class="button primary" href="#projects">프로젝트 보기</a>
             <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
         <div class="hero-visual" aria-label="포트폴리오 프로젝트 미리보기">
-          <div class="browser-window">
-            <div class="browser-dots" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
+          <div class="phone-frame">
+            <div class="phone-top"></div>
+            <div class="phone-card balance-card">
+              <span>오늘의 진행률</span>
+              <strong>82%</strong>
+              <div class="progress"><span></span></div>
             </div>
-            <div class="dashboard-preview">
-              <div class="preview-sidebar"></div>
-              <div class="preview-content">
-                <div class="preview-line wide"></div>
-                <div class="preview-grid">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="preview-chart">
-                  <span style="height: 42%"></span>
-                  <span style="height: 68%"></span>
-                  <span style="height: 52%"></span>
-                  <span style="height: 82%"></span>
-                  <span style="height: 61%"></span>
-                </div>
-              </div>
+            <div class="phone-card mini-card">
+              <span>배포 상태</span>
+              <strong>Stable</strong>
+            </div>
+            <div class="phone-list">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
         </div>
@@ -76,11 +62,11 @@
       <section class="section intro">
         <div>
           <p class="section-kicker">What I Build</p>
-          <h2>작동하는 데모와 읽히는 코드, 둘 다 중요하게 봅니다.</h2>
+          <h2>작동하는 데모와 읽히는 코드를 함께 만듭니다.</h2>
         </div>
         <p>
-          프로젝트마다 해결한 문제, 사용한 기술, 맡은 역할, 결과를 분리해서 보여줍니다.
-          방문자가 빠르게 판단할 수 있도록 대표 작업을 먼저 배치했습니다.
+          대표 프로젝트를 중심으로 문제, 역할, 기술, 결과를 빠르게 확인할 수 있게 구성했습니다.
+          채용 담당자와 개발자가 모두 맥락을 쉽게 읽을 수 있는 포트폴리오를 지향합니다.
         </p>
       </section>
 
@@ -89,7 +75,6 @@
           <p class="section-kicker">Featured Projects</p>
           <h2>대표 프로젝트</h2>
         </div>
-
         <div class="project-list" id="projectList"></div>
       </section>
 
@@ -100,14 +85,17 @@
         </div>
         <div class="stack-grid">
           <div>
+            <span class="stack-icon">01</span>
             <h3>Frontend</h3>
             <p>React, TypeScript, Vite, HTML, CSS, Responsive UI</p>
           </div>
           <div>
+            <span class="stack-icon">02</span>
             <h3>Backend</h3>
             <p>Node.js, Express, REST API, Authentication, Database Modeling</p>
           </div>
           <div>
+            <span class="stack-icon">03</span>
             <h3>Workflow</h3>
             <p>GitHub Actions, GitHub Pages, Testing, Code Review, Documentation</p>
           </div>
@@ -117,18 +105,18 @@
       <section class="section github-section" id="github">
         <div>
           <p class="section-kicker">Open Source Mindset</p>
-          <h2>GitHub에서 작업의 맥락을 남깁니다.</h2>
+          <h2>작업의 의도와 개선 과정을 GitHub에 남깁니다.</h2>
           <p>
-            이슈, 커밋, README, 배포 링크를 통해 프로젝트의 의도와 개선 과정을 확인할 수 있도록
-            정리하는 것을 좋아합니다.
+            이슈, 커밋, README, 배포 링크를 통해 프로젝트가 어떤 문제를 해결했는지
+            추적 가능한 형태로 정리합니다.
           </p>
         </div>
-        <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub 프로필 보기</a>
+        <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub 프로필</a>
       </section>
 
       <section class="section contact-section" id="contact">
         <p class="section-kicker">Contact</p>
-        <h2>함께 만들고 싶은 프로젝트가 있다면 연락해 주세요.</h2>
+        <h2>함께 만들고 싶은 프로젝트가 있다면 편하게 연락해 주세요.</h2>
         <div class="contact-links">
           <a href="mailto:hello@example.com">hello@example.com</a>
           <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
@@ -139,7 +127,7 @@
 
     <footer class="site-footer">
       <span>© 2026 Hyemin.dev</span>
-      <a href="#top">Back to top</a>
+      <a href="#top">맨 위로</a>
     </footer>
 
     <script src="script.js"></script>

@@ -2,8 +2,8 @@ const projects = [
   {
     title: "TaskFlow Dashboard",
     summary:
-      "팀 업무 현황을 한 화면에서 파악할 수 있는 대시보드입니다. 상태별 작업량, 담당자별 병목, 마감 임박 업무를 시각화했습니다.",
-    problem: "업무가 여러 도구에 흩어져 우선순위와 병목 지점을 빠르게 판단하기 어려웠습니다.",
+      "팀 업무 현황을 한 화면에서 확인하는 대시보드입니다. 상태별 작업량, 담당자별 병목, 마감 임박 업무를 빠르게 파악하도록 설계했습니다.",
+    problem: "업무가 여러 도구에 흩어져 우선순위와 병목 지점을 판단하기 어려웠습니다.",
     result: "핵심 지표를 카드와 차트로 정리해 회의 전 확인 시간을 줄이는 흐름을 만들었습니다.",
     stack: ["React", "TypeScript", "Chart UI", "GitHub Pages"],
     github: "https://github.com/",
@@ -13,9 +13,9 @@ const projects = [
   {
     title: "StudyMate Planner",
     summary:
-      "학습 목표, 일정, 복습 주기를 관리하는 개인 학습 플래너입니다. 작은 단위의 계획과 회고를 반복하도록 설계했습니다.",
+      "학습 목표, 일정, 복습 주기를 관리하는 개인 학습 플래너입니다. 작은 계획과 회고를 반복할 수 있도록 구성했습니다.",
     problem: "학습 기록은 남지만 다음 행동으로 이어지는 구조가 부족했습니다.",
-    result: "오늘의 할 일, 주간 진행률, 회고 입력을 연결해 꾸준히 개선할 수 있는 루틴을 만들었습니다.",
+    result: "오늘의 할 일, 주간 진행률, 회고 입력을 연결해 꾸준히 개선하는 루틴을 만들었습니다.",
     stack: ["JavaScript", "LocalStorage", "Responsive UI", "Accessibility"],
     github: "https://github.com/",
     demo: "https://pages.github.com/",
@@ -37,43 +37,38 @@ const projects = [
 const visuals = {
   dashboard: `
     <svg viewBox="0 0 520 360" role="img" aria-label="대시보드 프로젝트 미리보기">
-      <rect width="520" height="360" fill="#edf3ef"/>
-      <rect x="34" y="36" width="110" height="288" rx="8" fill="#256f58"/>
-      <rect x="174" y="44" width="250" height="18" rx="8" fill="#17211d"/>
-      <rect x="174" y="88" width="86" height="72" rx="8" fill="#ffffff"/>
-      <rect x="278" y="88" width="86" height="72" rx="8" fill="#ffffff"/>
-      <rect x="382" y="88" width="86" height="72" rx="8" fill="#ffffff"/>
-      <rect x="174" y="198" width="294" height="100" rx="8" fill="#ffffff"/>
-      <rect x="200" y="250" width="28" height="30" rx="6" fill="#4e75a6"/>
-      <rect x="246" y="222" width="28" height="58" rx="6" fill="#d76d4b"/>
-      <rect x="292" y="236" width="28" height="44" rx="6" fill="#c99938"/>
-      <rect x="338" y="210" width="28" height="70" rx="6" fill="#256f58"/>
-      <rect x="384" y="230" width="28" height="50" rx="6" fill="#4e75a6"/>
+      <rect width="520" height="360" fill="#f2f7ff"/>
+      <rect x="44" y="42" width="432" height="276" rx="28" fill="#ffffff"/>
+      <rect x="74" y="72" width="136" height="18" rx="9" fill="#191f28"/>
+      <rect x="74" y="122" width="104" height="86" rx="20" fill="#3182f6"/>
+      <rect x="196" y="122" width="104" height="86" rx="20" fill="#eef6ff"/>
+      <rect x="318" y="122" width="104" height="86" rx="20" fill="#f2f4f6"/>
+      <rect x="74" y="238" width="348" height="26" rx="13" fill="#f2f4f6"/>
+      <rect x="74" y="238" width="246" height="26" rx="13" fill="#3182f6"/>
     </svg>
   `,
   planner: `
     <svg viewBox="0 0 520 360" role="img" aria-label="플래너 프로젝트 미리보기">
-      <rect width="520" height="360" fill="#f7f0e8"/>
-      <rect x="58" y="46" width="404" height="268" rx="8" fill="#ffffff"/>
-      <rect x="88" y="82" width="176" height="16" rx="8" fill="#17211d"/>
-      <rect x="88" y="126" width="344" height="42" rx="8" fill="#edf3ef"/>
-      <rect x="104" y="141" width="14" height="14" rx="4" fill="#256f58"/>
-      <rect x="88" y="184" width="344" height="42" rx="8" fill="#edf3ef"/>
-      <rect x="104" y="199" width="14" height="14" rx="4" fill="#d76d4b"/>
-      <rect x="88" y="242" width="150" height="42" rx="8" fill="#256f58"/>
-      <rect x="260" y="242" width="172" height="42" rx="8" fill="#c99938"/>
+      <rect width="520" height="360" fill="#f8fafc"/>
+      <rect x="58" y="46" width="404" height="268" rx="30" fill="#ffffff"/>
+      <circle cx="112" cy="108" r="28" fill="#3182f6"/>
+      <rect x="158" y="90" width="206" height="16" rx="8" fill="#191f28"/>
+      <rect x="158" y="120" width="142" height="12" rx="6" fill="#8b95a1"/>
+      <rect x="90" y="176" width="340" height="42" rx="18" fill="#f2f4f6"/>
+      <rect x="90" y="236" width="250" height="42" rx="18" fill="#e8f3ff"/>
+      <rect x="356" y="236" width="74" height="42" rx="18" fill="#3182f6"/>
     </svg>
   `,
   monitor: `
     <svg viewBox="0 0 520 360" role="img" aria-label="모니터링 프로젝트 미리보기">
-      <rect width="520" height="360" fill="#eaf0f7"/>
-      <rect x="48" y="48" width="424" height="264" rx="8" fill="#ffffff"/>
-      <rect x="78" y="80" width="132" height="86" rx="8" fill="#256f58"/>
-      <rect x="230" y="80" width="212" height="86" rx="8" fill="#edf3ef"/>
-      <path d="M248 132 L286 112 L324 138 L362 100 L424 128" fill="none" stroke="#4e75a6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <rect x="78" y="198" width="364" height="18" rx="8" fill="#17211d"/>
-      <rect x="78" y="236" width="304" height="14" rx="7" fill="#9aa9a2"/>
-      <rect x="78" y="268" width="250" height="14" rx="7" fill="#d76d4b"/>
+      <rect width="520" height="360" fill="#f2f7ff"/>
+      <rect x="52" y="54" width="416" height="252" rx="30" fill="#ffffff"/>
+      <rect x="88" y="90" width="112" height="82" rx="22" fill="#191f28"/>
+      <rect x="224" y="90" width="208" height="82" rx="22" fill="#f2f4f6"/>
+      <path d="M244 132 L286 112 L326 138 L366 104 L418 128" fill="none" stroke="#3182f6" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="88" y="208" width="344" height="18" rx="9" fill="#f2f4f6"/>
+      <rect x="88" y="246" width="276" height="18" rx="9" fill="#e8f3ff"/>
+      <circle cx="402" cy="255" r="16" fill="#00b894"/>
     </svg>
   `,
 };
